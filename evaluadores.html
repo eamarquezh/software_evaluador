@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <title>evaluadores</title>
+</head>
+<body>
+    <header class="bg-dark text-white" height="240">
+        <nav class="navbar">
+            <div class="container-fluid">
+                <div>
+                    <a href="#">
+                        <img src="http://cdn.hidalgo.gob.mx/logo_gobhidalgo.svg" alt="" width="200"  height="160" class="">
+                    </a>
+                </div>
+                <div class="nav navbar-nav text-center">
+                    <h1>Secretaria de Educacion Pública de Hidalgo</h1>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="bg-light"> 
+    <!-- aqui datos de autenticacion -->
+    <div class="h3 m-2">
+        <div class="d-flex flex-row mb-3 justify-content-between">
+            <div class="p-2">
+                <span class="text-end"><i class="fa fa-user"></i></span>-name
+            </div>
+            <div class="p-2">
+                <button type="button" class="btn btn-secondary">cerrar sesión</button>
+            </div>
+          </div>
+        
+    </div>
+    <!-- acordeon -->
+    <div class="accordion m-3" id="accordionExample">
+        <!-- acordeon1 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button collapsed bg-primary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              titulo1
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <!-- aqui poner el contenido -->
+            </div>
+          </div>
+        </div>
+        <!-- acordeon2 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed bg-secondary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                titulo2
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <!-- aqui poner el contenido -->
+            </div>
+          </div>
+        </div>
+        <!-- acordeon3 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed bg-warning text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                titulo3
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <!-- aqui poner el contenido -->
+            </div>
+          </div>
+        </div>
+        <!-- acordeon4 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingfour">
+              <button class="accordion-button collapsed bg-success text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+                  titulo4
+              </button>
+            </h2>
+            <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingfour" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <!-- aqui poner el contenido -->
+              </div>
+            </div>
+          </div>
+      </div> 
+
+    </main>
+    <footer class="bg-dark text-white text-center text-lg-start bottom">
+        <div class="container p-4">
+          <div class="row">
+            <div class="col-lg-4 col-md-3 mb-3 mb-md-0">
+                <img src="https://cdn.hidalgo.gob.mx/logo_hgo_2019.png" alt="" width="100"  height="80" class="">
+            </div>
+            <div class="col-lg-4 col-md-3 mb-3 mb-md-0">
+              <h5 class="text-center">Contacto</h5>
+                <div class="text-center">
+                <p>Blvd. Felipe Ángeles s/n C.P. 42083,Pachuca de Soto, Hidalgo, México</p> 
+                <p>Horario de atención: 09:00 a 16:30</p>
+                <p>771 717 35 00</p>
+                <p>Secretaría de Educación Básica Tel. 771 717 25 10 ext 2062</p>
+                <p>Secretaría de Educación Media Superior y Superior Tel. 771 717 25 10 ext 4509</p>
+                </div>       
+            </div>
+            <div class="col-lg-4 col-md-3 mb-3 mb-md-0">
+                <div class="text-end">
+                    <a href="#">
+                        <img src="http://cdn.hidalgo.gob.mx/escudo_blanco.svg" alt="" width="200"  height="160" class="">
+                    </a>
+                </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+<!-- JavaScript Bundle with Popper -->
+<script src="/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>
