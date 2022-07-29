@@ -41,57 +41,340 @@
     <div class="accordion m-3" id="accordionExample">
         <!-- acordeon1 -->
         <div class="accordion-item">
-          <h2 class="accordion-header" id="headingOne">
-            <button class="accordion-button collapsed bg-primary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              titulo1
-            </button>
-          </h2>
-          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <!-- aqui poner el contenido -->
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed bg-primary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Datos Personales
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <!-- aqui poner el contenido -->
+                    <div class="row mb-3 align-items-center">
+                        <div class="col-auto">
+                            <label for="inputName" class="col-form-label">Nombre:</label>
+                        </div>
+                        <div class="col-sm-3">
+                            <input type="text" id="inputName" class="form-control" aria-describedby="passwordHelpInline">
+                        </div>
+                        <div class="col-auto">
+                            <label for="inputApellidoP" class="col-form-label">Apellido Paterno:</label>
+                        </div>
+                        <div class="col-sm-2">
+                            <input type="text" id="inputApellidoP" class="form-control" aria-describedby="passwordHelpInline">
+                        </div>
+                        <div class="col-auto">
+                            <label for="inputApellidoM" class="col-form-label">Apellido Materno:</label>
+                        </div>
+                        <div class="col-sm-2">
+                            <input type="text" id="inputApellidoM" class="form-control" aria-describedby="passwordHelpInline">
+                        </div>
+                    </div>
+                    <div class="row mb-3 align-items-center">
+                        <div class="col-auto">
+                            <label for="inputEscuela" class="col-form-label">Escuela:</label>
+                        </div>
+                        <div class="col-sm-8">
+                            <input type="text" id="inputEscuela" class="form-control" aria-describedby="passwordHelpInline">
+                        </div>
+                        <div class="col-auto">
+                            <label for="inputCategoria" class="col-form-label">Categoría:</label>
+                        </div>
+                        <div class="col-sm-2">
+                            <input type="text" id="inputCategoria" class="form-control" aria-describedby="passwordHelpInline">
+                        </div>
+                    </div>
+                    <div class="row mb-3 align-items-center">
+                        <div class="col-auto">
+                            <label for="inputClaveP" class="col-form-label">Clave Presupuestal:</label>
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="text" id="inputClaveP" class="form-control" aria-describedby="passwordHelpInline">
+                        </div>
+                        <div class="col-auto">
+                            <label for="inputCategoria" class="col-form-label">Categoría:</label>
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="text" id="inputCategoria" class="form-control" aria-describedby="passwordHelpInline">
+                        </div>
+                    </div>
+                    <div class="row mb-3 align-items-center">
+                        <div class="col-auto">
+                            <label for="inputDescripcion" class="col-form-label">Descripción:</label>
+                        </div>
+                        <div class="col-sm-10">
+                            <input type="text" id="inputDescripcion" class="form-control" aria-describedby="passwordHelpInline">
+                        </div>
+                    </div>
+                    <div class="row mb-3 align-items-center">
+                        <div class="col-auto">
+                            <label for="inputRFC" class="col-form-label">RFC:</label>
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="text" id="inputRFC" class="form-control" aria-describedby="passwordHelpInline">
+                        </div>
+                        <div class="col-auto">
+                            <label for="inputCorreo" class="col-form-label">Correo:</label>
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="text" id="inputCorreo" class="form-control" aria-describedby="passwordHelpInline">
+                        </div>
+                        <div class="col-auto">
+                            <button type="button" class="btn bg-primary text-white">Cuardar y continuar</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
         <!-- acordeon2 -->
         <div class="accordion-item">
-          <h2 class="accordion-header" id="headingTwo">
-            <button class="accordion-button collapsed bg-secondary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                titulo2
-            </button>
-          </h2>
-          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <!-- aqui poner el contenido -->
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed bg-secondary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Preparación Académica 1
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <!-- aqui poner el contenido -->
+                    <div class="row mb-3 align-items-center">
+                        <div class="col-auto">
+                            <label for="inputLic" class="col-form-label">Licenciatura:</label>
+                        </div>
+                        <div class="col-sm-2">
+                            <input type="text" id="inputLic" class="form-control" aria-describedby="passwordHelpInline">
+                        </div>
+                        <div class="form-check col-sm-2">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                            <label class="form-check-label" for="exampleRadios1">
+                                Constancia
+                            </label>
+                        </div>
+                        <div class="form-check col-sm-2">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                            <label class="form-check-label" for="exampleRadios1">
+                                Certificado
+                            </label>
+                        </div>
+                        <div class="form-check col-sm-2">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                            <label class="form-check-label" for="exampleRadios1">
+                                Titulo y Cedula
+                            </label>
+                        </div>
+                        <div class="col-auto">
+                            <button type="button" class="btn bg-primary text-white">Subir evidencia</button>
+                        </div>
+                    </div>
+                    <div class="row mb-3 align-items-center">
+                        <div class="col-auto">
+                            <label for="inputEspe" class="col-form-label">Especialidad:</label>
+                        </div>
+                        <div class="col-sm-2">
+                            <input type="text" id="inputLic" class="form-control" aria-describedby="passwordHelpInline">
+                        </div>
+                        <div class="form-check col-sm-2">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                            <label class="form-check-label" for="exampleRadios1">
+                                Constancia
+                            </label>
+                        </div>
+                        <div class="form-check col-sm-2">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                            <label class="form-check-label" for="exampleRadios1">
+                                Certificado
+                            </label>
+                        </div>
+                        <div class="form-check col-sm-2">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                            <label class="form-check-label" for="exampleRadios1">
+                                Titulo y Cedula
+                            </label>
+                        </div>
+                        <div class="col-auto">
+                            <button type="button" class="btn bg-primary text-white">Subir evidencia</button>
+                        </div>
+                    </div>
+                    <div class="row mb-3 align-items-center">
+                        <div class="col-auto">
+                            <label for="inputMaes" class="col-form-label">Maestría:</label>
+                        </div>
+                        <div class="col-sm-2">
+                            <input type="text" id="inputLic" class="form-control" aria-describedby="passwordHelpInline">
+                        </div>
+                        <div class="form-check col-sm-2">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                            <label class="form-check-label" for="exampleRadios1">
+                                Constancia
+                            </label>
+                        </div>
+                        <div class="form-check col-sm-2">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                            <label class="form-check-label" for="exampleRadios1">
+                                Certificado
+                            </label>
+                        </div>
+                        <div class="form-check col-sm-2">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                            <label class="form-check-label" for="exampleRadios1">
+                                Titulo y Cedula
+                            </label>
+                        </div>
+                        <div class="col-auto">
+                            <button type="button" class="btn bg-primary text-white">Subir evidencia</button>
+                        </div>
+                    </div>
+                    <div class="row mb-3 align-items-center">
+                        <div class="col-auto">
+                            <label for="inputDoc" class="col-form-label">Doctorado:</label>
+                        </div>
+                        <div class="col-sm-2">
+                            <input type="text" id="inputLic" class="form-control" aria-describedby="passwordHelpInline">
+                        </div>
+                        <div class="form-check col-sm-2">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                            <label class="form-check-label" for="exampleRadios1">
+                                Constancia
+                            </label>
+                        </div>
+                        <div class="form-check col-sm-2">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                            <label class="form-check-label" for="exampleRadios1">
+                                Certificado
+                            </label>
+                        </div>
+                        <div class="form-check col-sm-2">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                            <label class="form-check-label" for="exampleRadios1">
+                                Titulo y Cedula
+                            </label>
+                        </div>
+                        <div class="col-auto">
+                            <button type="button" class="btn bg-primary text-white">Subir evidencia</button>
+                        </div>
+                    </div>
+                    <div class="container text-center p-2">
+                        <div class="col-auto">
+                            <button type="button" class="btn bg-secondary text-white">Cuardar y continuar</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
         <!-- acordeon3 -->
         <div class="accordion-item">
-          <h2 class="accordion-header" id="headingThree">
-            <button class="accordion-button collapsed bg-warning text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                titulo3
-            </button>
-          </h2>
-          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <!-- aqui poner el contenido -->
+            <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Preparación Académica 2
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <!-- aqui poner el contenido -->
+                    <div class="row p-2 align-items-center">
+                        <div class="col-auto">
+                            <label for="inputLic" class="col-form-label">Idioma:</label>
+                        </div>
+                        <div class="col-sm-2">
+                            <input type="text" id="inputLic" class="form-control" aria-describedby="passwordHelpInline">
+                        </div>
+                        <div class="form-check col-sm-2">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                            <label class="form-check-label" for="exampleRadios1">
+                                Habla y lee
+                            </label>
+                        </div>
+                        <div class="form-check col-sm-2">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                            <label class="form-check-label" for="exampleRadios1">
+                                Habla, lee y escribe
+                            </label>
+                        </div>
+                        <div class="form-check col-sm-2">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                            <label class="form-check-label" for="exampleRadios1">
+                                Dominio total
+                            </label>
+                        </div>
+                        <div class="col-auto">
+                            <button type="button" class="btn bg-primary text-white">Subir evidencia</button>
+                        </div>
+                    </div>
+                    <div class="row p-2 align-items-center">
+                        <div class="col-auto">
+                            <label for="inputEspe" class="col-form-label">Certificacion:</label>
+                        </div>
+                        <div class="col-sm-2">
+                            <input type="text" id="inputLic" class="form-control" aria-describedby="passwordHelpInline">
+                        </div>
+                        <div class="form-check col-sm-2">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                            <label class="form-check-label" for="exampleRadios1">
+                                Incompleto
+                            </label>
+                        </div>
+                        <div class="form-check col-sm-2">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                            <label class="form-check-label" for="exampleRadios1">
+                                Terminado
+                            </label>
+                        </div>
+                        <div class="col-auto">
+                            <button type="button" class="btn bg-primary text-white">Subir evidencia</button>
+                        </div>
+                    </div>
+                    <div class="container text-center p-2">
+                        <div class="col-auto">
+                            <button type="button" class="btn bg-dark text-white">Cuardar y continuar</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
         <!-- acordeon4 -->
         <div class="accordion-item">
             <h2 class="accordion-header" id="headingfour">
-              <button class="accordion-button collapsed bg-success text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
-                  titulo4
-              </button>
+                <button class="accordion-button collapsed bg-warning text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+                    Permanencia en el subsistema
+                </button>
             </h2>
             <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingfour" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <!-- aqui poner el contenido -->
-              </div>
+                <div class="accordion-body">
+                    <!-- aqui poner el contenido -->
+                    <div class="row mb-3 align-items-center">
+                        <div class="col-auto">
+                            <label for="inputEspe" class="col-form-label">Años de Servicio en el Subsistema:</label>
+                        </div>
+                        <div class="col-sm-2">
+                            <input type="text" id="inputLic" class="form-control" aria-describedby="passwordHelpInline">
+                        </div>
+                        <div class="col-auto">
+                            <button type="button" class="btn bg-primary text-white">Subir evidencia</button>
+                        </div>
+                    </div>
+                    <div class="row mb-3 align-items-center">
+                        <div class="col-auto">
+                            <label for="inputEspe" class="col-form-label"><b>El documento comprobatorio para este rubro debe ser el F.U.P. expedido por la SEP.</b></label>
+                        </div>
+                        <div class="col-auto">
+                            <button type="button" class="btn bg-warning text-white">Guardar y continuar</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-      </div> 
+        </div>
+        <!-- acordeon5 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFive">
+                <button class="accordion-button collapsed bg-success text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    Calidad
+                </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <!-- aqui poner el contenido -->
+                </div>
+            </div>
+        </div>
+    </div> 
 
     </main>
     <footer class="bg-dark text-white text-center text-lg-start bottom">
