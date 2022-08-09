@@ -37,12 +37,11 @@
     padding: 10px 0;
     font-size: 1.2em;
 }
-.right-form label{
-    width: 100%;
-    font-size: 18px;
-    font-weight: 700;
-    margin: 20px 0;
-}
+label{
+    display: inline-block;
+    width: 80px;
+  }
+
 @media only screen and (max-width:768px) {
     .left-form{
         display: none;
