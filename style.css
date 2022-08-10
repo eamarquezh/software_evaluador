@@ -32,20 +32,17 @@ body{
     justify-content: center;
     align-items: center;
 }
-.right-form h1{
+ h2{
     font-size: 2em;
-    color: #4d6de6;
+    color: #F01515;
     margin: 20px 0;
     font-weight: bold;
 }
-.right-form form >input{
-    width: 100%;
-    padding: 10px 0;
-    font-size: 1.2em;
-}
+
 label{
     display: inline-block;
     width: 80px;
+    margin-top: 9px;
   }
 
 @media only screen and (max-width:768px) {
