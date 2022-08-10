@@ -3,12 +3,18 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    width: 100%;
+    min-height: 100vh;
+    font-family: sans-serif;
+}
 .left-form{
     width: 50%;
     height: 100%;
     overflow: hidden;
     float: left;
 }
+
 .right-form{
     width: 50%;
     height: 100%;
@@ -55,11 +61,7 @@ label{
     }
 
 }
-body{
-    width: 100%;
-    min-height: 100vh;
-    font-family: sans-serif;
-}
+
 footer
 {
     margin-top:230px;
