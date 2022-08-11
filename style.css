@@ -39,15 +39,17 @@ body{
     font-weight: bold;
 }
 
-label {
-    display: block;
-    padding-left: 15px;
-    text-indent: -15px;
-}
+label{
+    display: inline-block;
+    width: 80px;
+  }
 button{
    
+        background-color: white;
+        color: black;
+        border: 2px solid #4CAF50; /* Green */
     
-     margin-top: 10px;
+     margin-top: 9px;
   }
 
 @media only screen and (max-width:768px) {
