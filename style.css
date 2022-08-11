@@ -34,23 +34,20 @@ body{
 }
  h2{
     font-size: 2em;
-    color: #d41616;
+    color: #e91010;
     margin: 20px 0;
     font-weight: bold;
 }
 
-label{
-    display: inline-block;
-    width: 80px;
-    margin-top: 9px;
-  }
-  button{
+label {
+    display: block;
+    padding-left: 15px;
+    text-indent: -15px;
+}
+button{
    
-        background-color: white;
-        color: black;
-        border: 2px solid #4CAF50; /* Green */
     
-     margin-top: 9px;
+     margin-top: 10px;
   }
 
 @media only screen and (max-width:768px) {
