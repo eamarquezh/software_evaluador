@@ -3,12 +3,18 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    width: 100%;
+    min-height: 100vh;
+    font-family: sans-serif;
+}
 .left-form{
     width: 50%;
     height: 100%;
     overflow: hidden;
     float: left;
 }
+
 .right-form{
     width: 50%;
     height: 100%;
@@ -26,17 +32,14 @@
     justify-content: center;
     align-items: center;
 }
-.right-form h1{
+h2{
     font-size: 2em;
-    color: #4d6de6;
+    color: #e91010;
     margin: 20px 0;
     font-weight: bold;
 }
-.right-form form >input{
-    width: 100%;
-    padding: 10px 0;
-    font-size: 1.2em;
-}
+
+
 label{
     display: inline-block;
     width: 80px;
@@ -55,11 +58,7 @@ label{
     }
 
 }
-body{
-    width: 100%;
-    min-height: 100vh;
-    font-family: sans-serif;
-}
+
 footer
 {
     margin-top:230px;
