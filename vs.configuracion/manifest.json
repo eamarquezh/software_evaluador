@@ -1,0 +1,21 @@
+{
+    "short_name": "SistemaInformáticoWebparalaEvaluacióndelOtorgamientoalDesempeñoDocenteenlasEscuelasNormalesPúblicasdelEstadodeHidalgo",
+    "name": "SistemaInformáticoWebparalaEvaluacióndelOtorgamientoalDesempeñoDocenteenlasEscuelasNormalesPúblicasdelEstadodeHidalgo",
+    "start_url": "index.html?launcher=true",
+    "icons": [
+      {
+        "src": "launcher-icon-1x.png",
+        "type": "https://cdn.hidalgo.gob.mx/logo_hgo_2019.png",
+        "sizes": "48x48"
+      },
+      {
+        "src": "launcher-icon-2x.png",
+        "type": "https://cdn.hidalgo.gob.mx/logo_hgo_2019.png",
+        "sizes": "96x96"
+      }
+    ],
+    "background_color":"#ffff",
+    "theme_color":"#110f0f",
+    "display":"standalone",
+    "orientation":"portraint"
+  }
