@@ -5,7 +5,7 @@ $email     =$_POST["email"];
 $password  =$_POST["password"];
 
 $idusuario=0;
-$consulta="select idcliente from clientes where email='$mail' and password='$password'";
+$consulta="select idusuario from clientes where email='$mail' and password='$password'";
 $recordset = mysqli_query($link,$consulta);
 while($registro = mysqli_fetch_array($recordset)){$idusuario=$registro["idusuario"];}
 
