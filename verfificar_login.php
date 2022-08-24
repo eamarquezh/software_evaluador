@@ -15,7 +15,7 @@ if($idusuario==0){
 	$_SESSION['ss_idusuario']=0;
 	echo 0; // no existe registro
 }else{
-	$_SESSION['ss_idusuario']=$idcliente;
+	$_SESSION['ss_idusuario']=$idusuario;
 	echo 1; // se encontro registro
 }
 
