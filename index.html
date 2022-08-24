@@ -1,3 +1,24 @@
+<?php
+//session_name("darling");
+session_start();
+
+if(!isset($_SESSION['ss_idusuario'])){
+  $ss_idusuario=0;
+}else{
+  $ss_idusuario=$_SESSION['ss_idusuario'];
+}
+
+$nombre_cliente="";
+//echo $idusuario;
+if($idusuarios>0){
+  $consulta="select nombre from clientes where idusuario='$idusuario'";
+  $recordset = mysqli_query($link,$consulta);
+  while($registro = mysqli_fetch_array($recordset)){$nombre_cliente=$registro["nombre"];}
+
+}
+
+//echo "idusuario ".$idusuario;
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -99,5 +120,38 @@
   </footer>
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script >
+  function iniciarsesion(){
+    var email=$('#email').val();
+    var password=$('#password').val();
+    console.log("HOLA DESDE LA CONSOLA DEL NAVEGADOR");
+    $.ajax({
+      type : "post",
+      url : "verifica_login.php",
+      data : {
+        email :email,
+        password: password
+      },
+      dataType:'text',
+      success : function( data ){   
+
+       // alert(data); 
+       
+        if(data==-1){
+          alert("Correo electronico y/o contraseña no son validos");
+        }else{
+          alert("Bienvenido");
+
+          var url = "index.php";    
+          $(location).attr('href',url);
+        }              
+
+       
+        
+      }
+    });
+
+  }
+  </script>
 </body>
 </html>
