@@ -1,19 +1,18 @@
 <?php
 //session_name("darling");
 session_start();
-
 if(!isset($_SESSION['ss_idusuario'])){
-  $ss_idusuario=0;
+  $idusuario=0;
 }else{
-  $ss_idusuario=$_SESSION['ss_idusuario'];
+  $idusuario=$_SESSION['ss_idusuario'];
 }
 
-$nombre_cliente="";
+$nombre_usuario="";
 //echo $idusuario;
 if($idusuario>0){
   $consulta="select nombre from clientes where idusuario='$idusuario'";
   $recordset = mysqli_query($link,$consulta);
-  while($registro = mysqli_fetch_array($recordset)){$nombre_cliente=$registro["nombre"];}
+  while($registro = mysqli_fetch_array($recordset)){$nombre_usuario=$registro["nombre"];}
 
 }
 
