@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 //OBTENER VARIABLES DE LA FUNCION JAVA SCRIPT
 $email     =$_POST["email"];
 $password  =$_POST["password"];
