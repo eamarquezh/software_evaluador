@@ -1,3 +1,21 @@
+<?php
+session_start();
+if(!isset($_SESSION['ss_idusuario'])){
+    $idusuario=0;
+  }else{
+    $idusuario=$_SESSION['ss_idusuario'];
+  }
+  $nombre_usuario="";
+  //echo $idusuario;
+  if($idusuario>0){
+    $consulta="select nombre from clientes where idusuario='$idusuario'";
+    $recordset = mysqli_query($link,$consulta);
+    while($registro = mysqli_fetch_array($recordset)){$nombre_usuario=$registro["nombre"];}
+  
+  }
+  
+  //echo "idusuario ".$idusuario;  
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
