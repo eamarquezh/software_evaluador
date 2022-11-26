@@ -27,19 +27,21 @@ if(!isset($_SESSION['ss_idusuario'])){
     <!-- CSS only -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>adninistrador</title>
+    <title>Administrador</title>
 </head>
-<body>
-    <header class="bg-dark text-white" height="240">
+
+<body style="background-color: #621132;">
+    <div class="main-wrapper">
+        
         <nav class="navbar">
             <div class="container-fluid">
                 <div>
                     <a href="#">
-                        <img src="http://cdn.hidalgo.gob.mx/logo_gobhidalgo.svg" alt="" width="200"  height="160" class="">
+                        <img alt="gob.mx" src="assets/images/logo_gobhidalgo.png" width="258">
                     </a>
                 </div>
-                <div class="nav navbar-nav text-center">
-                    <h1>Secretaria de Educacion Pública de Hidalgo</h1>
+                <div class="col-sm-12 col-lg-8 col-xl-8 text-white mt-4">
+                    <h1>Dirección General de Formación y Superación Docente</h1>
                 </div>
             </div>
         </nav>
@@ -52,7 +54,7 @@ if(!isset($_SESSION['ss_idusuario'])){
                 <?php echo '<label a  href="#">Usuario Actual: <strong>'.$nombre_usuario.'</strong><span class="text-end"><i class="fa fa-user"></i></span>-name</label>'?>
             </div>
             <div class="p-2">
-                <?php echo '<a href="cerrarsesion.php"> <button  type="button" class="btn btn-secondary">cerrar sesión</button></a>'?>
+                <?php echo '<a href="cerrarsesion.php"> <button  type="button" class="btn btn-success">cerrar sesión</button></a>'?>
             </div>
           </div>
         
@@ -62,7 +64,7 @@ if(!isset($_SESSION['ss_idusuario'])){
         <!-- acordeon1 -->
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingOne">
-            <button class="accordion-button collapsed bg-primary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <button class="accordion-button collapsed text-white" style="background-color: #621132;" type="button"  data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
               Docentes Participantes
             </button>
           </h2>
@@ -71,16 +73,16 @@ if(!isset($_SESSION['ss_idusuario'])){
                   <!-- aqui poner el contenido -->
                   <div class="container text-center">
                       <div class="row align-items-start">
-                          <div class="col bg-primary text-white">
+                          <div class="col text-white" style="background-color: #b38e5d;">
                               <b>Docente</b>
                           </div>
-                          <div class="col bg-primary text-white">
+                          <div class="col text-white" style="background-color: #b38e5d;">
                               <b>RFC</b>
                           </div>
-                          <div class="col bg-primary text-white">
+                          <div class="col text-white" style="background-color: #b38e5d;">
                               <b>Correo</b>
                           </div>
-                          <div class="col bg-primary text-white">
+                          <div class="col text-white" style="background-color: #b38e5d;">
                               <b>Escuela</b>
                           </div>
                       </div>
@@ -128,7 +130,7 @@ if(!isset($_SESSION['ss_idusuario'])){
                       </div>
                   </div>
                   <div class="container text-center p-2">
-                      <button type="button" class="btn btn-primary text-white">Subir Docentes</button> <button type="button" class="btn btn-primary text-white">Activar Convocatoria</button>
+                      <button type="button" class="btn text-white" style="background-color: #621132;">Subir Docentes</button> <button type="button" class="btn text-white" style="background-color: #621132;">Activar Convocatoria</button>
                   </div>
               </div>
           </div>
@@ -136,7 +138,7 @@ if(!isset($_SESSION['ss_idusuario'])){
         <!-- acordeon2 -->
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingTwo">
-            <button class="accordion-button collapsed bg-secondary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            <button class="accordion-button collapsed text-white" style="background-color: #b38e5d;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                 Evaluadores Participantes
             </button>
           </h2>
@@ -145,16 +147,16 @@ if(!isset($_SESSION['ss_idusuario'])){
                   <!-- aqui poner el contenido -->
                   <div class="container text-center">
                       <div class="row align-items-start">
-                          <div class="col bg-secondary text-white">
+                          <div class="col text-white" style="background-color: #621132;">
                               <b>Docente</b>
                           </div>
-                          <div class="col bg-secondary text-white">
+                          <div class="col text-white" style="background-color: #621132;">
                               <b>RFC</b>
                           </div>
-                          <div class="col bg-secondary text-white">
+                          <div class="col text-white" style="background-color: #621132;">
                               <b>Correo</b>
                           </div>
-                          <div class="col bg-secondary text-white">
+                          <div class="col text-white" style="background-color: #621132;">
                               <b>Evaluara a</b>
                           </div>
                       </div>
@@ -202,7 +204,7 @@ if(!isset($_SESSION['ss_idusuario'])){
                       </div>
                   </div>
                   <div class="container text-center p-2">
-                      <button type="button" class="btn btn-secondary text-white">Subir Evaluadores</button> <button type="button" class="btn btn-secondary text-white">Informar a evaluadores</button>
+                      <button type="button" class="btn text-white" style="background-color: #b38e5d;">Subir Evaluadores</button> <button type="button" class="btn text-white" style="background-color: #b38e5d;">Informar a evaluadores</button>
                   </div>
               </div>
           </div>
@@ -210,7 +212,7 @@ if(!isset($_SESSION['ss_idusuario'])){
         <!-- acordeon3 -->
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingThree">
-            <button class="accordion-button collapsed bg-warning text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            <button class="accordion-button collapsed text-white" style="background-color: #621132;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                 Dispersión
             </button>
           </h2>
@@ -224,7 +226,7 @@ if(!isset($_SESSION['ss_idusuario'])){
                                   <label for="exampleInputUMA" class="form-label"><b>Valor actual de la UMA:</b></label>
                                   <input type="uma" class="form-control" id="exampleInputUMA" aria-describedby="Ingrese UMA">
                               </div>
-                              <button type="submit" class="btn btn-warning">Actualizar</button>
+                              <button type="submit" class="btn" style="background-color: #b38e5d;">Actualizar</button>
                           </form>
                       </div>
                   </div>
@@ -233,7 +235,7 @@ if(!isset($_SESSION['ss_idusuario'])){
         <!-- acordeon4 -->
         <div class="accordion-item">
             <h2 class="accordion-header" id="headingfour">
-              <button class="accordion-button collapsed bg-success text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+              <button class="accordion-button collapsed text-white" style="background-color: #b38e5d;" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
                   Resultados
               </button>
             </h2>
@@ -242,16 +244,16 @@ if(!isset($_SESSION['ss_idusuario'])){
                     <!-- aqui poner el contenido -->
                     <div class="container text-center">
                         <div class="row align-items-start">
-                            <div class="col bg-success text-white">
+                            <div class="col text-white" style="background-color: #621132;">
                                 <b>Docente</b>
                             </div>
-                            <div class="col bg-success text-white">
+                            <div class="col text-white" style="background-color: #621132;">
                                 <b>RFC</b>
                             </div>
-                            <div class="col bg-success text-white">
+                            <div class="col text-white" style="background-color: #621132;">
                                 <b>Correo</b>
                             </div>
-                            <div class="col bg-success text-white">
+                            <div class="col text-white" style="background-color: #621132;">
                                 <b>Resultados</b>
                             </div>
                         </div>
@@ -299,7 +301,7 @@ if(!isset($_SESSION['ss_idusuario'])){
                         </div>
                     </div>
                     <div class="container text-center p-2">
-                        <button type="button" class="btn btn-success text-white">Informar resultados e informar cierre de convocatoria</button>
+                        <button type="button" class="btn text-white" style="background-color: #621132;">Informar resultados e informar cierre de convocatoria</button>
                     </div>
                 </div>
             </div>
@@ -307,27 +309,26 @@ if(!isset($_SESSION['ss_idusuario'])){
       </div> 
 
     </main>
-    <footer class="bg-dark text-white text-center text-lg-start bottom">
-        <div class="container p-4">
-          <div class="row">
-            <div class="col-lg-4 col-md-3 mb-3 mb-md-0">
-                <img src="https://cdn.hidalgo.gob.mx/logo_hgo_2019.png" alt="" width="100"  height="80" class="">
+    <footer class="col-12" style="height:100px">
+        <div class="align-items-centers">
+          <div class="row  d-flex align-items-center justify-content-center">
+
+            <div class="col-4 text-center text-white fs-3 mt-4">
+                <img style="width:50%" src="assets/images/logotipohidalgo.png">
             </div>
-            <div class="col-lg-4 col-md-3 mb-3 mb-md-0">
-              <h5 class="text-center">Contacto</h5>
-                <div class="text-center">
+            
+            <div class="col-4  text-center mt-4 align-items-center justify-content-center text-white">
+              <strong class="fs-6">Contacto</strong>
+              <div class="text-center">
                 <p>Blvd. Felipe Ángeles s/n C.P. 42083,Pachuca de Soto, Hidalgo, México</p> 
                 <p>Horario de atención: 09:00 a 16:30</p>
-                
-               <p>Dirección General de Formación y Superación Docente Tel. 771 791 42 73 y 771 791 45 13</p>
-                <p>Departamento de Educacción Normal Tel. 771 710 05 84</p>
+                <p>Dirección General de Formación y Superación Docente  Tel. 771 791 42 73 y 771 791 45 13</p>
+                <p>Departamento de Educación Normal Tel. 771 710 05 84</p>
                 </div>       
-            </div>
-            <div class="col-lg-4 col-md-3 mb-3 mb-md-0">
-                <div class="text-end">
-                    <a href="#">
-                        <img src="http://cdn.hidalgo.gob.mx/escudo_blanco.svg" alt="" width="200"  height="160" class="">
-                    </a>
+            </div>       
+            <div class="col-4  text-center mt-4 align-items-center justify-content-center text-white">
+                        <img  style="width:20%" src="assets/images/escudo_blanco.svg">
+                        <p>© 2022 Secretaría de Educación Pública</p>
                 </div>
             </div>
           </div>
@@ -345,8 +346,7 @@ if(!isset($_SESSION['ss_idusuario'])){
       },
       dataType:'text',
       success : function( data ){                  
-        location.reload();
-        
+        location.reload();       
       }
     });
   }
