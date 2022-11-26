@@ -1,20 +1,37 @@
+<?php
+//conexion
+//session o sesiones
+session_start();
+if(!isset($_SESSION['ss_idusuario'])){
+    $idusuario=0;
+  }else{
+    $idusuario=$_SESSION['ss_idusuario'];
+  }
+  $nombre_usuario="";
+  //echo $idusuario;
+  if($idusuario>0){
+    $consulta="select nombre from Accesos where idusuario='$idusuario'";
+    $recordset = mysqli_query($link,$consulta);
+    while($registro = mysqli_fetch_array($recordset)){$nombre_usuario=$registro["nombre"];}
+  
+  }
+  
+  //echo "idusuario ".$idusuario;  
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords"content=" Secretaría de Educación Pública de Hidalgo"/>
-    <meta name="description" content=" Secretaría de Educación Pública de Hidalgo"/>
-    <meta name="robots" content="noindex,nofollow" />
 
     <title> Dirección General de Formación y Superación Docente</title>
     <link rel="icon"type="image/png"sizes="16x16"href="assets/images/logo.png"/>
 
     <!-- CSS only -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
     <title>Evaluadores</title>
 </head>
 
@@ -39,21 +56,19 @@
     <div class="h3 m-2">
         <div class="d-flex flex-row mb-3 justify-content-between">
             <div class="p-2">
-                <span class="text-end"><i class="fa fa-user"></i></span>-name
+                <?php echo '<label a  href="#">Usuario Actual: <strong>'.$nombre_usuario.'</strong><span class="text-end"><i class="fa fa-user"></i></span>-name</label>'?>
             </div>
             <div class="p-2">
-                <button type="button" class="btn btn-success">cerrar sesión</button>
-                
+                <?php echo '<a href="cerrarsesion.php"> <button  type="button" class="btn btn-success">cerrar sesión</button></a>'?>
             </div>
           </div>
-        
     </div>
         <!-- acordeon -->
     <div class="accordion m-3" id="accordionExample">
         <!-- acordeon1 -->
         <div class="accordion-item">
             <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button collapsed bg-success text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    <button class="accordion-button collapsed text-white" style="background-color: #621132;" type="button"  data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> 
                     Preparación Académica 1
                 </button>
             </h2>
@@ -86,7 +101,7 @@
                             </label>
                         </div>
                         <div class="col-auto">
-                            <button type="button" class="btn bg-success text-white">Subir evidencia</button>
+                        <button type="button" class="btn text-white" style="background-color: #b38e5d;">Subir evidencia</button> 
                         </div>
                     </div>
                     <div class="row mb-3 align-items-center">
@@ -115,7 +130,7 @@
                             </label>
                         </div>
                         <div class="col-auto">
-                            <button type="button" class="btn bg-success text-white">Subir evidencia</button>
+                        <button type="button" class="btn text-white" style="background-color: #621132;">Subir evidencia</button>
                         </div>
                     </div>
                     <div class="row mb-3 align-items-center">
@@ -144,7 +159,7 @@
                             </label>
                         </div>
                         <div class="col-auto">
-                            <button type="button" class="btn bg-success text-white">Subir evidencia</button>
+                        <button type="button" class="btn text-white" style="background-color: #b38e5d;">Subir evidencia</button>
                         </div>
                     </div>
                     <div class="row mb-3 align-items-center">
@@ -173,7 +188,7 @@
                             </label>
                         </div>
                         <div class="col-auto">
-                            <button type="button" class="btn bg-success text-white">Subir evidencia</button>
+                        <button type="button" class="btn text-white" style="background-color: #621132;">Subir evidencia</button>
                         </div>
                     </div>
                     <div class="container text-center p-2">
@@ -188,8 +203,8 @@
         <!-- acordeon2 -->
         <div class="accordion-item">
             <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed bg-success text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Preparación Académica 2
+                <button class="accordion-button collapsed text-white" style="background-color: #b38e5d;" type="button"  data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo"> 
+                Preparación Académica 2
                 </button>
             </h2>
             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
@@ -221,7 +236,7 @@
                             </label>
                         </div>
                         <div class="col-auto">
-                            <button type="button" class="btn bg-success text-white">Subir evidencia</button>
+                        <button type="button" class="btn text-white" style="background-color: #621132;">Subir evidencia</button>
                         </div>
                     </div>
                     <div class="row p-2 align-items-center">
@@ -244,7 +259,7 @@
                             </label>
                         </div>
                         <div class="col-auto">
-                            <button type="button" class="btn bg-success text-white">Subir evidencia</button>
+                        <button type="button" class="btn text-white" style="background-color: #b38e5d;">Subir evidencia</button>
                         </div>
                     </div>
                     <div class="container text-center p-2">
@@ -259,8 +274,8 @@
         <!-- acordeon3 -->
         <div class="accordion-item">
             <h2 class="accordion-header" id="headingThree">
-                <button class="accordion-button collapsed bg-success text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Permanencia en el subsistema
+                <button class="accordion-button collapsed text-white" style="background-color: #621132;" type="button"  data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree"> 
+                Permanencia en el Subsistema
                 </button>
             </h2>
             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
@@ -274,7 +289,7 @@
                             <input type="text" id="inputLic" class="form-control" aria-describedby="passwordHelpInline">
                         </div>
                         <div class="col-auto">
-                            <button type="button" class="btn bg-success text-white">Subir evidencia</button>
+                        <button type="button" class="btn text-white" style="background-color: #b38e5d;">Subir evidencia</button>
                         </div>
                     </div>
                     <div class="row mb-3 align-items-center">
@@ -292,7 +307,7 @@
         <!-- acordeon4 -->
         <div class="accordion-item">
             <h2 class="accordion-header" id="headingfour">
-                <button class="accordion-button collapsed bg-success text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+                <button class="accordion-button collapsed text-white" style="background-color: #b38e5d;" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
                     Calidad
                 </button>
             </h2>
@@ -341,5 +356,20 @@
       </footer>
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script>
+    function cerrarsesion(){
+       $.ajax({
+         type : "post",
+         url : "cerrarsesion.php",
+         data : {
+            
+         },
+         dataType:'text',
+         success : function( data ){                  
+           location.reload();       
+         }
+       });
+     }
+   </script>
 </body>
 </html>
