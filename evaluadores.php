@@ -83,25 +83,25 @@ if(!isset($_SESSION['ss_idusuario'])){
                             <input type="text" id="inputLic" class="form-control" aria-describedby="passwordHelpInline">
                         </div>
                         <div class="form-check col-sm-2">
-                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                            <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios1" value="option1" checked>
                             <label class="form-check-label" for="exampleRadios1">
                                 Constancia
                             </label>
                         </div>
                         <div class="form-check col-sm-2">
-                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                            <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios1" value="option1" checked>
                             <label class="form-check-label" for="exampleRadios1">
                                 Certificado
                             </label>
                         </div>
                         <div class="form-check col-sm-2">
-                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                            <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios1" value="option1" checked>
                             <label class="form-check-label" for="exampleRadios1">
                                 Titulo y Cedula
                             </label>
                         </div>
                         <div class="col-auto">
-                        <button type="button" class="btn text-white" style="background-color: #b38e5d;">Subir evidencia</button> 
+                            <button type="button" class="btn bg-success text-white">Subir evidencia</button>
                         </div>
                     </div>
                     <div class="row mb-3 align-items-center">
@@ -112,25 +112,25 @@ if(!isset($_SESSION['ss_idusuario'])){
                             <input type="text" id="inputLic" class="form-control" aria-describedby="passwordHelpInline">
                         </div>
                         <div class="form-check col-sm-2">
-                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                            <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios1" value="option1" checked>
                             <label class="form-check-label" for="exampleRadios1">
                                 Constancia
                             </label>
                         </div>
                         <div class="form-check col-sm-2">
-                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                            <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios1" value="option1" checked>
                             <label class="form-check-label" for="exampleRadios1">
                                 Certificado
                             </label>
                         </div>
                         <div class="form-check col-sm-2">
-                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                            <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios1" value="option1" checked>
                             <label class="form-check-label" for="exampleRadios1">
                                 Titulo y Cedula
                             </label>
                         </div>
                         <div class="col-auto">
-                        <button type="button" class="btn text-white" style="background-color: #621132;">Subir evidencia</button>
+                            <button type="button" class="btn bg-success text-white">Subir evidencia</button>
                         </div>
                     </div>
                     <div class="row mb-3 align-items-center">
@@ -141,25 +141,25 @@ if(!isset($_SESSION['ss_idusuario'])){
                             <input type="text" id="inputLic" class="form-control" aria-describedby="passwordHelpInline">
                         </div>
                         <div class="form-check col-sm-2">
-                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                            <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios1" value="option1" checked>
                             <label class="form-check-label" for="exampleRadios1">
                                 Constancia
                             </label>
                         </div>
                         <div class="form-check col-sm-2">
-                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                            <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios1" value="option1" checked>
                             <label class="form-check-label" for="exampleRadios1">
                                 Certificado
                             </label>
                         </div>
                         <div class="form-check col-sm-2">
-                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                            <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios1" value="option1" checked>
                             <label class="form-check-label" for="exampleRadios1">
                                 Titulo y Cedula
                             </label>
                         </div>
                         <div class="col-auto">
-                        <button type="button" class="btn text-white" style="background-color: #b38e5d;">Subir evidencia</button>
+                            <button type="button" class="btn bg-success text-white">Subir evidencia</button>
                         </div>
                     </div>
                     <div class="row mb-3 align-items-center">
@@ -170,25 +170,25 @@ if(!isset($_SESSION['ss_idusuario'])){
                             <input type="text" id="inputLic" class="form-control" aria-describedby="passwordHelpInline">
                         </div>
                         <div class="form-check col-sm-2">
-                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                            <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios1" value="option1" checked>
                             <label class="form-check-label" for="exampleRadios1">
                                 Constancia
                             </label>
                         </div>
                         <div class="form-check col-sm-2">
-                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                            <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios1" value="option1" checked>
                             <label class="form-check-label" for="exampleRadios1">
                                 Certificado
                             </label>
                         </div>
                         <div class="form-check col-sm-2">
-                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                            <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios1" value="option1" checked>
                             <label class="form-check-label" for="exampleRadios1">
                                 Titulo y Cedula
                             </label>
                         </div>
                         <div class="col-auto">
-                        <button type="button" class="btn text-white" style="background-color: #621132;">Subir evidencia</button>
+                            <button type="button" class="btn bg-success text-white">Subir evidencia</button>
                         </div>
                     </div>
                     <div class="container text-center p-2">
@@ -218,19 +218,19 @@ if(!isset($_SESSION['ss_idusuario'])){
                             <input type="text" id="inputLic" class="form-control" aria-describedby="passwordHelpInline">
                         </div>
                         <div class="form-check col-sm-2">
-                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                            <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios1" value="option1" checked>
                             <label class="form-check-label" for="exampleRadios1">
                                 Habla y lee
                             </label>
                         </div>
                         <div class="form-check col-sm-2">
-                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                            <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios1" value="option1" checked>
                             <label class="form-check-label" for="exampleRadios1">
                                 Habla, lee y escribe
                             </label>
                         </div>
                         <div class="form-check col-sm-2">
-                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                            <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios1" value="option1" checked>
                             <label class="form-check-label" for="exampleRadios1">
                                 Dominio total
                             </label>
@@ -247,13 +247,13 @@ if(!isset($_SESSION['ss_idusuario'])){
                             <input type="text" id="inputLic" class="form-control" aria-describedby="passwordHelpInline">
                         </div>
                         <div class="form-check col-sm-2">
-                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                            <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios1" value="option1" checked>
                             <label class="form-check-label" for="exampleRadios1">
                                 Incompleto
                             </label>
                         </div>
                         <div class="form-check col-sm-2">
-                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                            <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios1" value="option1" checked>
                             <label class="form-check-label" for="exampleRadios1">
                                 Terminado
                             </label>
